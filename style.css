@@ -1,0 +1,44 @@
+.vbox {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+.hbox {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.fill {
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+.grow     { flex: 1;   }
+.scroll   { overflow-y: scroll; }
+.debug    { border: 3px solid red; }
+
+
+
+body, input, button, select {
+    font-size: 120%;
+}
+
+
+#history {
+    margin: 1em 2em;
+}
+#history p {
+    padding: 0.5em 1em;
+}
+
+p.user {
+    background-color: lightgray;
+    margin-top: 3em;
+}
+p.server {
+    background-color: lightblue;
+}
