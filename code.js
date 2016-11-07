@@ -19,8 +19,6 @@ var pubnub = new PubNub({
 });
 
 
-var TARGET_CHANNEL = 'geolocation';
-
 //add listener for message events
 pubnub.addListener({
     message: function(evt) {
@@ -29,8 +27,7 @@ pubnub.addListener({
     }
 });
 //subscribe to channel
-//pubnub.subscribe({channels:['chatbot-simple']});
-pubnub.subscribe({channels:['filter','translate','geolocation']});
+pubnub.subscribe({channels:['filter','translate','geolocation','voting','blocker']});
 
 //send the message
 $('message').addEventListener('keypress',function(evt) {
@@ -47,7 +44,7 @@ function sendMessage() {
         text: $('message').value
     };
     pubnub.publish({
-        channel:TARGET_CHANNEL,
+        channel:$('channel').value,
         message: msg
     });
     $('message').value = '';
