@@ -1,0 +1,48 @@
+{
+    "_key_id": 229188,
+    "_id": 2292,
+    "name": "course-demos",
+    "description": "demos for the Intro to Blocks course",
+    "event_handlers": [
+        {
+            "_id": 2184,
+            "name": "filter",
+            "event": "js-before-publish",
+            "channels": "filter",
+            "file": "js-before-publish/filter.js",
+            "output": "blocks-output-UCQDr3gZVpP1qfXZnPJ9.6866510403482436"
+        },
+        {
+            "_id": 2185,
+            "name": "translate",
+            "event": "js-before-publish",
+            "channels": "translate",
+            "file": "js-before-publish/translate.js",
+            "output": "blocks-output-UCQDr3gZVpP1qfXZnPJ9.8590098067813403"
+        },
+        {
+            "_id": 2187,
+            "name": "geolocation",
+            "event": "js-before-publish",
+            "channels": "geolocation",
+            "file": "js-before-publish/geolocation.js",
+            "output": "blocks-output-UCQDr3gZVpP1qfXZnPJ9.11623224533271315"
+        },
+        {
+            "_id": 2242,
+            "name": "voting",
+            "event": "js-before-publish",
+            "channels": "voting",
+            "file": "js-before-publish/voting.js",
+            "output": "blocks-output-UCQDr3gZVpP1qfXZnPJ9.4699588086487052"
+        },
+        {
+            "_id": 2245,
+            "name": "blocker",
+            "event": "js-before-publish",
+            "channels": "blocker",
+            "file": "js-before-publish/blocker.js",
+            "output": "blocks-output-UCQDr3gZVpP1qfXZnPJ9.9406148675929395"
+        }
+    ]
+}
