@@ -1,6 +1,7 @@
-/**
- * Created by josh on 11/4/16.
- */
+var pubnub = new PubNub({
+    subscribeKey: "sub-c-9198529e-a2cd-11e6-9fcd-0619f8945a4f",
+    publishKey:   "pub-c-7d74808f-de74-4272-9f7f-5b0b6cea9a4a"
+});
 
 
 // a simple JQuery like function to get elements by ID
@@ -13,10 +14,6 @@ function appendMessage(msg) {
 }
 
 
-var pubnub = new PubNub({
-    subscribeKey: "sub-c-9198529e-a2cd-11e6-9fcd-0619f8945a4f",
-    publishKey:   "pub-c-7d74808f-de74-4272-9f7f-5b0b6cea9a4a"
-});
 
 
 //add listener for message events
